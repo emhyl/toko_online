@@ -1,5 +1,5 @@
 ---
 deployment:
 tasks:
-- export DEPLOYPATH=/home/hidw6865/public_html/git
+- export DEPLOYPATH=/home/hidw6865/public_html/toko_online
 - /bin/cp -r * $DEPLOYPATH
