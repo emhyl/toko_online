@@ -4,7 +4,7 @@
             	<div class="row">
             		<div class="col-6">
             			<p class="text-light" style="font-size: 15px">
-            				<small class="border-bottom border-secondary"> <span class="fw-bold"> Alamat</span> : Alamat polewali kec.gantarang, kabupaten bulukumba</small>	
+            				<small class="border-bottom border-secondary"> <span class="fw-bold"> Alamat</span> : Alamat Taccorong kec.gantarang, kabupaten bulukumba</small>	
             			</p>
             			<p class="text-light" style="font-size: 15px">
             				<small class="border-bottom border-secondary"> <span class="fw-bold"> Nomor Telpon</span> : 085-255-827-255</small>
