@@ -73,7 +73,10 @@
                               </div>
                               <div class="modal-body">
                                 <div class="alert alert-info" role="alert">
-                                  Jika anda memilih metode pembayaran <span class="fw-bold">Transfer,</span> ke nomor rekening berikut <span class="fw-bold fst-italic">BNI 750300544</span> 
+                                      Jika anda memilih metode pembayaran <span class="fw-bold">Transfer,</span> ke nomor rekening berikut <span class="fw-bold fst-italic">BNI 750300544</span> 
+                                </div>
+                                <div class="alert alert-warning text-danger" role="alert">
+                                  Menggunakan mode pengiriman di antarkan, akan di kirimkan melalui jasa pengiriman <span class="fw-bold">Kurirta</span> 
                                 </div>
                                 <form action="<?= base_url('index.php/dashboard/order') ?>" method="post"  enctype="multipart/form-data">
                                     <input type="hidden" class="form-control" value="<?= $user->id ?>" name="id_user">
@@ -94,7 +97,7 @@
                                       <option value="TRANSFER">TRANSFER</option>
                                     </select>
                                     <select class="form-select form-select-sm my-2" name="jenis_pengiriman" id="select" aria-label=".form-select-sm example">
-                                      <option selected>Opsi Penerimaan Barang</option>
+                                      <option selected>Pilih pengiriman</option>
                                       <option value="ambil sendiri">ambil sendiri</option>
                                       <option value="diantarkan">diantarkan</option>
                                     </select>

@@ -31,7 +31,7 @@
               </div>
               <?php }else if($rowOrder->status == 'proses'){ ?>
               <div class="alert alert-success text-center" role="alert">
-                      Silahkan Ambil pesanan di penjual.!
+                <?= ($rowOrder->jenis_pengiriman == "diantarkan")?"Barang akan di antarkan melalui kurirta " : "Silahkan Ambil pesanan di penjual.!" ?>
               </div>
               <?php } ?>
           </div>
