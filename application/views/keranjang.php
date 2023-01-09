@@ -1,5 +1,6 @@
 <?php $total = 0; ?>
 <?php $btn = false; ?>
+<?php $item = "" ?>
 
         <!-- Section-->
         <section class="py-5">
@@ -36,6 +37,7 @@
                                   <div class="card-body p-4">
                                       <div class="text-center">
                                           <!-- Product name-->
+                                          <?php $item .=  $rowBarang['nama_brg']."(".$rowBarang['item'].")" ?>
                                           <h5 class="fw-bolder"><?= $rowBarang['nama_brg'] ?></h5>
                                           <h5 class="fw-bolder"><?= $rowBarang['item'] ?> Buah</h5>
                                           <span class="badge bg-info text-dark">Rp. <?= $rowBarang['harga'] ?></span>
@@ -80,6 +82,7 @@
                                 </div>
                                 <form action="<?= base_url('index.php/dashboard/order') ?>" method="post"  enctype="multipart/form-data">
                                     <input type="hidden" class="form-control" value="<?= $user->id ?>" name="id_user">
+                                    <input type="hidden" class="form-control" value="<?= $item ?>" name="item_buah">
                                     <div class="mb-3">
                                       <label for="nama" class="form-label">Nama</label>
                                       <input type="text" required name="nama" class="form-control" value="<?= $user->nama ?>" id="nama" placeholder="Masukkan nama anda">

@@ -96,6 +96,7 @@
               <th scope="col">Alamat</th>
               <th scope="col">NO HP</th>
               <th scope="col">Tanggal</th>
+              <th scope="col">Buah</th>
               <th scope="col">Harga</th>
             </tr>
           </thead>
@@ -107,6 +108,7 @@
               <td><?= $row->alamat ?></td>
               <td><?= $row->no_hp ?></td>
               <td><?= $row->tgl ?></td>
+              <td><?= $row->item_buah ?></td>
               <td><?= $row->total ?></td>
             </tr>
             <?php } ?>

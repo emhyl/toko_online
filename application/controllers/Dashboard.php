@@ -83,6 +83,7 @@ class Dashboard extends CI_controller{
 			'tgl' => $waktu,
 			'metode_bayar' => $_POST['metode_pembayaran'],
 			'bukti_pembayaran' => $gambar,
+			'item_buah' => $_POST['item_buah'],
 			'total' => $_POST['total'],
 			'status' => 'order',
 			'jenis_pengiriman' => $_POST['jenis_pengiriman']

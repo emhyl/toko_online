@@ -19,6 +19,7 @@
 				<th>ALAMAT</th>
 				<th>NO HP</th>
 				<th>TANGAL</th>
+				<th>BUAH</th>
 				<th>HARGA</th>
 			</tr>
 			<?php $no=1; foreach($data as $row): ?>
@@ -28,12 +29,13 @@
 				<td><?= $row->alamat  ?></td>
 				<td><?= $row->no_hp  ?></td>
 				<td><?= $row->tgl  ?></td>
+				<td><?= $row->item_buah ?></td>
 				<td><?= $row->total  ?></td>
 			</tr>
 			<?php endforeach; ?>
 			<tr>
-				<td colspan="5">TOTAL :</td>
-				<td><?= $total ?></td>
+				<td colspan="6">TOTAL :</td>
+				<td>Rp.<?= $total ?></td>
 			</tr>
 		</table>
 		
